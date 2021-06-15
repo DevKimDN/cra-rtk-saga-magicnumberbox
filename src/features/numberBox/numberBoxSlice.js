@@ -12,6 +12,7 @@ export const numberBoxSlice = createSlice({
     fetchMyNumber: (state, action) => {
       state.myNumber= action.payload;
     },
+
   },
  
 });
