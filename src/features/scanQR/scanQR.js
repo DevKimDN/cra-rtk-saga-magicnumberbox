@@ -23,7 +23,7 @@ function ScanQR(props) {
           style= {{height: 240, width: 320, border : '2px solid blue'}}
          onError={handleError}
          onScan={handleScan}
-         facingMode = "rear"
+         facingMode={'rear'}
           />
         </div>
     )
