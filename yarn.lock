@@ -9374,6 +9374,11 @@ react@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
+reactive-qr@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/reactive-qr/-/reactive-qr-0.1.8.tgz#62d890b999de0ef8938563d8784fd0db2a6be31f"
+  integrity sha512-Q1XO1i1dUqPgGpwURMhdl8Fik8c41nz+PsexsGvr9LFqJOTYnxhAWXl2L0EFezGG4ApHcGUjsW7Vx1suG2jmBQ==
+
 read-pkg-up@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-2.0.0.tgz#6b72a8048984e0c41e79510fd5e9fa99b3b549be"
