@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import QrReader from 'react-qr-scanner'
-import ReactiveQR from "reactive-qr";
+import QrReader from 'react-qr-reader'
+
 
 ScanQR.propTypes = {
     delay: PropTypes.number,
     result: PropTypes.string,
 }
 ScanQR.defaultProps = {
-    delay: 2000,
+    delay: 1000,
     result: 'No result',
 }
 
@@ -18,17 +18,17 @@ const handleError = (er)=> {console.log('qr-error: ',er);alert(er)};
 function ScanQR(props) {
     const {delay,result} = props;
     return (
-        <div>
-        {/* <QrReader
+        <div style={{border: "1px solid blue"}}>
+        <QrReader
           delay={delay}
-          style= {{height: 240, width: 320, border : '2px solid blue'}}
+          style= {{height: 320, width: 320, border : '2px solid blue'}}
          onError={handleError}
          onScan={handleScan}
-         facingMode={'rear'}
-          /> */}
+        // facingMode={'rear'}
+          />
 
-        <ReactiveQR onCode={code => console.log(code)} />
-        
+
+
         </div>
     )
 }
