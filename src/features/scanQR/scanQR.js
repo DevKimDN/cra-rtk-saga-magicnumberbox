@@ -11,8 +11,8 @@ ScanQR.defaultProps = {
     result: 'No result',
 }
 
-const handleScan = ()=> {};
-const handleError = (er)=> {console.log('qr-error: ',er)};
+const handleScan = (data)=> {alert(data)};
+const handleError = (er)=> {console.log('qr-error: ',er);alert(er)};
 
 function ScanQR(props) {
     const {delay,result} = props;
