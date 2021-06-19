@@ -12,7 +12,7 @@ ScanQR.defaultProps = {
 }
 
 const handleScan = ()=> {};
-const handleError = ()=> {};
+const handleError = (er)=> {console.log('qr-error: ',er)};
 
 function ScanQR(props) {
     const {delay,result} = props;
