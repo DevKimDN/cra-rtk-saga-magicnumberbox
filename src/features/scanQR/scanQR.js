@@ -7,11 +7,11 @@ ScanQR.propTypes = {
     result: PropTypes.string,
 }
 ScanQR.defaultProps = {
-    delay: 100,
+    delay: 2000,
     result: 'No result',
 }
 
-const handleScan = (data)=> {alert(data)};
+const handleScan = (data)=> {if(data)alert(data)};
 const handleError = (er)=> {console.log('qr-error: ',er);alert(er)};
 
 function ScanQR(props) {
