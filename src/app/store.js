@@ -1,7 +1,7 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import createSagaMiddleware from "redux-saga";
 import numberBoxSlice from '../features/numberBox/numberBoxSlice';
-import saga from '../middlewares/saga';
+import rootSaga from '../middlewares/saga';
 
 //?? let
 let sagaMiddleware = createSagaMiddleware();
@@ -14,6 +14,6 @@ const store = configureStore({
   middleware
 });
 
-sagaMiddleware.run(saga);
+sagaMiddleware.run(rootSaga);
 
 export default store;
