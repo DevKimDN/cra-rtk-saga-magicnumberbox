@@ -104,7 +104,7 @@ function* flow() {
 
   
   export default function* rootSaga() {
-    yield fork(flow);
+   // yield fork(flow);
     
     yield takeLatest(numberBoxSagaAction.GET_MY_NUMBER_SAGA, getMyNumber);
     const actionPut = yield takeLatest(numberBoxSagaAction.PUT_MY_NUMBER_SAGA, putMyNumber);
